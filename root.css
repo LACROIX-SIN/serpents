@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    font-family: 'Montserrat';
+    color:black;
+    background: white;
+    -webkit-box-shadow: 9px 10px 120px -35px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 10px 120px -35px rgba(0,0,0,0.75);
+    box-shadow: 9px 10px 120px -35px rgba(0,0,0,0.75);
+    border-radius: 16px;
+    padding:12px;
+}
+nav{
+    display:flex;
+    flex-direction:row;
+    position:fixed;
+    padding-top:20px;
+    -webkit-box-shadow: 9px 10px 120px -35px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 10px 120px -35px rgba(0,0,0,0.75);
+    box-shadow: 9px 10px 120px -35px rgba(0,0,0,0.75);
+    width:100vw;
+    top:0px;
+    left:0px;
+    height:fit-content;
+    border-radius: 20px;
+}
+.navlinks{
+    display:flex;
+    list-style: none;
+    justify-items: right;
+    border-spacing: 120px;
+    align-self: flex-end;
+}
+li{
+    padding:12px;
+    -webkit-box-shadow: 9px 10px 120px -35px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 10px 120px -35px rgba(0,0,0,0.75);
+    box-shadow: 9px 10px 120px -35px rgba(0,0,0,0.75);
+    border-radius:16px;
+    border:1px;
+    border-style:groove;
+    margin-left:10px;
+    margin-right:10px;
+}
+#active{
+    background-color:black;
+    color:rgb(33, 255, 4);
+}
+button{
+    display: flex;
+    border:2px;
+    border-radius:20px;
+    -webkit-box-shadow: 9px 10px 120px -35px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 10px 120px -35px rgba(0,0,0,0.75);
+    box-shadow: 9px 10px 120px -35px rgba(0,0,0,0.75);
+    padding:12px;
+    margin:12px;
+    background: white;
+    border-style: solid;
+    align-self: flex-end;
+    position: absolute;
+    right: 10px;
+    top:30px;
+}

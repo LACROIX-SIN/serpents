@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="shortcut icon" href="lock.png" type="image/x-icon">
+</head>
+
+<body>
+    <div id="password-container">
+        <h1>serpents - élites</h1>
+        <h2>Enter Password to Access the main website.</h2>
+        <input type="password" id="password" placeholder="::: Enter Password here :::">
+        <button onclick="checkPassword()">Check Password</button>
+        <p id="error-message"></p>
+    </div>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Allura&family=Bungee+Tint&family=Flow+Block&family=Jersey+10&display=swap');
+
+        body {
+            font-family: 'Jersey 10';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #345843;
+            overflow: hidden;
+            cursor:grabbing;
+        }
+
+        #password-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 16px;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
+            text-align: center;
+            width: 40vw;
+            cursor:copy;
+        }
+
+        #password {
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 30vw;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+            font-family: 'Flow Block';
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            background-color: #000000;
+            color: white;
+            cursor: pointer;
+            cursor:grabbing;
+        }
+
+        button:hover {
+            background-color: #882121;
+            cursor:grabbing;
+        }
+
+        #error-message {
+            margin-top: 10px;
+            font-family: 'Bungee Tint';
+            cursor:help;
+        }
+
+        h1 {
+            font-family: 'Allura';
+            cursor:progress;
+        }
+
+        h2 {
+            font-family: 'Bungee Tint';
+            cursor: not-allowed;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.body.style.cursor = "url('C:\Users\jczzy\OneDrive\Documents\Serpents\cursor.png'), auto";
+        });
+        // script.js
+        function checkPassword() {
+            const correctPassword = "3ABF9010"; // Set your password here
+            const enteredPassword = document.getElementById("password").value;
+            const errorMessage = document.getElementById("error-message");
+
+            if (enteredPassword === correctPassword) {
+                window.location.href = "main.html"; // Redirect to the protected page
+            } else {
+                errorMessage.textContent =
+                    "Incorrect Password. \n your Information has been sent to our servers, Please do not continue as you will only create harm to yourself. \n Try again, if you're an authorized member.";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

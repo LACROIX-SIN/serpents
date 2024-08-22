@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serpents</title>
+    <link rel="stylesheet" href="root.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <script>
+        function showAccessGrantedAlert() {
+            if (confirm("[ L'accès a été accordé au site Web principal, 🐍\nAcceptez-vous de continuer à savoir de tout cœur que ce site Web enregistre, suit et stocke vos données jusqu'à/sauf si vous êtes un personnel autorisé? ]\n \nAccess has been granted to the main website, 🐍\nDo you agree to continue knowing wholeheartedly that this website saves, tracks and stores your data until/unless you're an authorized personel?")) {
+                // If user clicks "OK" (Agree & continue)
+                alert("[Votre adresse IP a été enregistrée sur les serveurs. \n Vous avez accepté nos conditions générales et promettez que vous êtes un utilisateur vérifié. \n Continuez à vos PROPRES risques si vous n'êtes pas un utilisateur vérifié. \n 🦋] \n  \n Your IP Address has been saved to the servers. \n You have agreed to our Terms&Conditions and promise you're a verified user. \n Continue at your OWN risk if you're not a verified user. \n 🦋");
+            } else {
+                // If user clicks "Cancel"
+                alert("[Vous avez annulé la suite.\n votre adresse IP a été enregistrée. \n Bonne chance. 😉] \n  \nYou canceled the continuation.\n your IP address has been saved. \n Best of luck. 😉");
+            }
+        }
+        window.onload = showAccessGrantedAlert;
+    </script>
+    <nav>
+        <img src="logo.png" alt="logo" style="height:100px; width:100px;">
+        <div class="links">
+            <ul class="navlinks">
+                <li id="active"> Home</li><br>
+                <li> About us</li><br>
+                <li> Programs</li><br>
+                <li> Community</li><br>
+                <li> Success Stories</li><br>
+                <li> Contact</li><br>
+            </ul>
+        </div>
+        <button>See event Locations</button>
+    </nav>
+</body>
+
+</html>
